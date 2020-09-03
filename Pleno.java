@@ -1,10 +1,9 @@
 
 public class Pleno extends Pesquisador {
-	public Assistente(int nomePesquisador, int matriculaPesquisador, double salarioBasePesquisador) {
-		super(nomePesquisador, matriculaPesquisador, salarioBasePesquisador);
+	
+	public Pleno(String _nome, String _matricula, double _salarioBase) {
+		super(_nome, _matricula, _salarioBase, "Pleno");
+		this.salarioBruto = _salarioBase * 4.68;
+		
 	}
-	public void calculaSalario() {
-		salarioBruto= salarioBase*4.68;
-	}
-
 }
