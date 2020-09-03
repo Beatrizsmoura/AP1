@@ -2,13 +2,13 @@
 public class Pesquisador {
 	
 	private String nome;
-	private String matricula;
+	private int matricula;
 	private double salarioBase;
 	
 	private  String categoria;
 	protected double salarioBruto;
 	
-	public Pesquisador(String _nome, String _matricula, double _salarioBase, String _categoria) {
+	public Pesquisador(String _nome, int _matricula, double _salarioBase, String _categoria) {
 		setNome(_nome);
 		setMatricula(_matricula);
 		setSalarioBase(_salarioBase);
@@ -23,11 +23,11 @@ public class Pesquisador {
 		this.nome= nome;
 	}
 	
-	public String getMatricula() {
+	public int getMatricula() {
 		return this.matricula;
 	}
 	
-	public void setMatricula(String matricula) {
+	public void setMatricula(int matricula) {
 		this.matricula = matricula;
 	}
 	

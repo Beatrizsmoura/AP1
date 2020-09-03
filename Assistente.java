@@ -1,10 +1,14 @@
 
 public class Assistente extends Pesquisador {
 	
-	public Assistente(String _nome, String _matricula, double _salarioBase) {
+	public Assistente(String _nome, int _matricula, double _salarioBase) {
 		super(_nome, _matricula, _salarioBase, "Assistente");
-		this.salarioBruto = _salarioBase * 2.25;
+		calcularSalario(_salarioBase);
 		
+	}
+	
+	public void calcularSalario(double _salarioBase) {
+		this.salarioBruto = _salarioBase * 2.25;
 	}
 
 }
