@@ -1,7 +1,7 @@
 
 public class Pleno extends Pesquisador {
 	
-	public Pleno(String _nome, int _matricula, double _salarioBase) {
+	public Pleno(int _matricula, String _nome, double _salarioBase) {
 		super(_matricula, _nome,_salarioBase, "Pleno");
 		calcularSalario(_salarioBase);
 		

@@ -1,7 +1,7 @@
 
 public class Senior extends Pesquisador {
 
-	public Senior(String _nome, int _matricula, double _salarioBase) {
+	public Senior(int _matricula, String _nome, double _salarioBase) {
 		super(_matricula, _nome,_salarioBase, "Senior");
 		calcularSalario(_salarioBase);
 		

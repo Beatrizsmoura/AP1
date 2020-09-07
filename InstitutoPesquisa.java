@@ -12,7 +12,7 @@ public class InstitutoPesquisa {
 	
 	private void iniciaInstituto() {
 		this.projetos = new ArrayList<Projeto>();
-		this.pesquisadores = new ArrayList<Pesquisador>();
+		this.pesquisadores = new ArrayList<>();
 		this.alocacoes = new ArrayList<Alocacao>();
 		
 		Projeto p1 = new Projeto("Robo domestico", 100000.0, 48, new Data(1, 1, 2007));
@@ -26,7 +26,7 @@ public class InstitutoPesquisa {
 		projetos.add(p4);
 		
 		// Precisa instaciar as classes correspodentes - num sei como faz		
-		Pesquisador s = new Pesquisador(11, "Cascão", 1000.0, "Senior");
+		Senior s = new Senior(11, "Cascão", 1000.0);
 		pesquisadores.add(s);
 		
 		alocacoes.add(new Alocacao(s, p1, new Data(4, 8, 2020)));
