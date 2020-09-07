@@ -10,6 +10,7 @@ public class Main {
 		ArrayList<Projeto> projetos = Nintendo.getProjetos();
 		ArrayList<Alocacao> alocacoes = Nintendo.getAlocacoes();
 		
+		// TABELA PESQUISADORES
 		System.out.println("###### PESQUISADORES ######");
 		System.out.format("%-8s%-13s%-12s%-12s%-10s", "MATRIC.", "NOME", "SAL. BASE", "SAL. BRUTO", "CATEGORIA");
 		System.out.println();
@@ -26,9 +27,9 @@ public class Main {
 		    		);
 		    System.out.println();
 		}
-		
 		System.out.println();
 		
+		//TABELA ALOCAÇÕES
 		System.out.println("###### ALOCAÇÕES ######");
 		System.out.format("%-13s%-17s%-12s", "PESQUISADOR", "PROJETO", "DATA ENTRADA");
 		System.out.println();
@@ -44,9 +45,26 @@ public class Main {
 		    		+ alocacao.getDataEntrada().getAno());
 		    System.out.println();
 		}
+		System.out.println();
 		
-		System.out.println(Nintendo.getProjetosDePesquisador(pesquisadores.get(0)));
-		System.out.println(Nintendo.getPesquisadoresDeProjeto(projetos.get(0)));
+		//TESTE DA QUESTAO 4
+		Pesquisador pesquisador1 = pesquisadores.get(0);
+		ArrayList<Projeto> projetosDePesquisador = Nintendo.getProjetosDePesquisador(pesquisador1);
+		
+		System.out.println("Projetos do pesquisador: " + pesquisador1.getNome());
+		for (Projeto projeto: projetosDePesquisador) {
+			System.out.println("-"+projeto.getNome());
+		}
+		System.out.println();
+		
+		//TESTE DA QUESTAO 4
+		Projeto projeto1 = projetos.get(0);
+		ArrayList<Pesquisador> pesquisadoresDeProjeto = Nintendo.getPesquisadoresDeProjeto(projeto1);
+		
+		System.out.println("Pesquisadores do projeto: " + projeto1.getNome());
+		for (Pesquisador pesquisador: pesquisadoresDeProjeto) {
+			System.out.println("-"+pesquisador.getNome());
+		}
 
 	}
 
