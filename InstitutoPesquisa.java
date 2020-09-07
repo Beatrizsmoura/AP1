@@ -25,11 +25,11 @@ public class InstitutoPesquisa {
 		projetos.add(p3);
 		projetos.add(p4);
 				
-		Senior pesquisador1 = new Senior( "Cascão",11, 1000.0);
-		Assistente pesquisador2 = new Assistente("Cebolinha",22, 1000.0);
-		Assistente pesquisador3 = new Assistente("Mônica",33, 1200.0);
-		Pleno pesquisador4 = new Pleno("Magali",44, 1200.0);
-		Senior pesquisador5 = new Senior("Chico Bento",55,1400.0);
+		Senior pesquisador1 = new Senior( 11,"Cascão", 1000.0);
+		Assistente pesquisador2 = new Assistente(22,"Cebolinha", 1000.0);
+		Assistente pesquisador3 = new Assistente(33,"Mônica", 1200.0);
+		Pleno pesquisador4 = new Pleno(44, "Magali", 1200.0);
+		Senior pesquisador5 = new Senior(55,"Chico Bento",1400.0);
 		
 		pesquisadores.add(pesquisador1);
 		pesquisadores.add(pesquisador2);
