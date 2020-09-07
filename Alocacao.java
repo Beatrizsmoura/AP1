@@ -35,13 +35,4 @@ public class Alocacao {
 	public void setDataEntrada(Data dataEntrada) {
 		this.dataEntrada = dataEntrada;
 	}
-	
-	@Override
-	public String toString() {
-	    return this.getPesquisador().getNome()
-	    		+ this.getProjeto().getNome()
-	    		+ this.getDataEntrada().getDia() + "/"
-	    		+ this.getDataEntrada().getMes() + "/"
-	    		+ this.getDataEntrada().getAno();
-	}
 }

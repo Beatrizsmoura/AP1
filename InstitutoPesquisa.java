@@ -24,7 +24,7 @@ public class InstitutoPesquisa {
 		projetos.add(p2);
 		projetos.add(p3);
 		projetos.add(p4);
-				
+		
 		Senior pesquisador1 = new Senior(11, "Cascão", 1000.0);
 		Assistente pesquisador2 = new Assistente(22, "Cebolinha", 1000.0);
 		Assistente pesquisador3 = new Assistente(33, "Mônica", 1200.0);
