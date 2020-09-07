@@ -16,7 +16,7 @@ public class InstitutoPesquisa {
 		this.alocacoes = new ArrayList<Alocacao>();
 		
 		Projeto p1 = new Projeto("Robo domestico", 100000.0, 48, new Data(1, 1, 2007));
-		Projeto p2 = new Projeto("Motor √† vento", 200000.0, 15, new Data(2, 2, 2007));
+		Projeto p2 = new Projeto("Motor ‡ vento", 200000.0, 15, new Data(2, 2, 2007));
 		Projeto p3 = new Projeto("Playstation Wii", 300000.0, 24, new Data(3, 3, 2007));
 		Projeto p4 = new Projeto("Teletransporte", 400000.0, 36, new Data(4, 4, 2007));
 		
@@ -25,11 +25,11 @@ public class InstitutoPesquisa {
 		projetos.add(p3);
 		projetos.add(p4);
 				
-		Senior pesquisador1 = new Senior( "Casc√£o",11, 1000.0);
-		Assistente pesquisador2 = new Assistente("Cebolinha",22, 1000.0);
-		Assistente pesquisador3 = new Assistente("M√¥nica",33, 1200.0);
-		Pleno pesquisador4 = new Pleno("Magali",44, 1200.0);
-		Senior pesquisador5 = new Senior("Chico Bento",55,1400.0);
+		Senior pesquisador1 = new Senior(11, "Casc„o", 1000.0);
+		Assistente pesquisador2 = new Assistente(22, "Cebolinha", 1000.0);
+		Assistente pesquisador3 = new Assistente(33, "MÙnica", 1200.0);
+		Pleno pesquisador4 = new Pleno(44, "Magali", 1200.0);
+		Senior pesquisador5 = new Senior(55 ,"Chico Bento", 1400.0);
 		
 		pesquisadores.add(pesquisador1);
 		pesquisadores.add(pesquisador2);
@@ -65,4 +65,5 @@ public class InstitutoPesquisa {
 	public ArrayList<Alocacao> getAlocacoes(){
 		return this.alocacoes;
 	}
+	
 }
