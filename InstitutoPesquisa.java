@@ -66,4 +66,26 @@ public class InstitutoPesquisa {
 		return this.alocacoes;
 	}
 	
+	public ArrayList<Projeto> getProjetosDePesquisador(Pesquisador pesquisador) {
+		ArrayList<Projeto> _projetos = new ArrayList<Projeto>();
+		for (Alocacao alocacao: alocacoes) {
+			if (alocacao.getPesquisador() == pesquisador) {
+				_projetos.add(alocacao.getProjeto());
+			}
+		}
+		
+		return _projetos;
+	}
+	
+	public ArrayList<Pesquisador> getPesquisadoresDeProjeto(Projeto projeto) {
+		ArrayList<Pesquisador> _pesquisadores= new ArrayList<Pesquisador>();
+		for (Alocacao alocacao: alocacoes) {
+			if (alocacao.getProjeto() == projeto) {
+				_pesquisadores.add(alocacao.getPesquisador());
+			}
+		}
+		
+		return _pesquisadores;
+	}
+	
 }

@@ -7,6 +7,7 @@ public class Main {
 		InstitutoPesquisa Nintendo = new InstitutoPesquisa();
 		
 		ArrayList<Pesquisador> pesquisadores = Nintendo.getPesquisadores();
+		ArrayList<Projeto> projetos = Nintendo.getProjetos();
 		ArrayList<Alocacao> alocacoes = Nintendo.getAlocacoes();
 		
 		System.out.println("###### PESQUISADORES ######");
@@ -43,6 +44,9 @@ public class Main {
 		    		+ alocacao.getDataEntrada().getAno());
 		    System.out.println();
 		}
+		
+		System.out.println(Nintendo.getProjetosDePesquisador(pesquisadores.get(0)));
+		System.out.println(Nintendo.getPesquisadoresDeProjeto(projetos.get(0)));
 
 	}
 
