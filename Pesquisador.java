@@ -1,11 +1,10 @@
 
 public class Pesquisador {
 	
-	private String nome;
-	private int matricula;
-	private double salarioBase;
-	
-	private  String categoria;
+	protected  String nome;
+	protected  int matricula;
+	protected  double salarioBase;	
+	protected  String categoria;
 	protected double salarioBruto;
 	
 	public Pesquisador(int _matricula, String _nome , double _salarioBase, String _categoria) {
