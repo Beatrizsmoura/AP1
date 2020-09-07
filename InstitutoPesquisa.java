@@ -15,12 +15,21 @@ public class InstitutoPesquisa {
 		this.pesquisadores = new ArrayList<Pesquisador>();
 		this.alocacoes = new ArrayList<Alocacao>();
 		
-		projetos.add(new Projeto("Robo domestico", 100000.0, 48, new Data(1, 1, 2007)));
-		projetos.add(new Projeto("Motor à vento", 200000.0, 15, new Data(2, 2, 2007)));
-		projetos.add(new Projeto("Playstation Wii", 300000.0, 24, new Data(3, 3, 2007)));
-		projetos.add(new Projeto("Teletransporte", 400000.0, 36, new Data(4, 4, 2007)));
+		Projeto p1 = new Projeto("Robo domestico", 100000.0, 48, new Data(1, 1, 2007));
+		Projeto p2 = new Projeto("Motor à vento", 200000.0, 15, new Data(2, 2, 2007));
+		Projeto p3 = new Projeto("Playstation Wii", 300000.0, 24, new Data(3, 3, 2007));
+		Projeto p4 = new Projeto("Teletransporte", 400000.0, 36, new Data(4, 4, 2007));
 		
-		pesquisadores.add(new Pesquisador(11, "Cascão", 1000.0, "Senior"));
+		projetos.add(p1);
+		projetos.add(p2);
+		projetos.add(p3);
+		projetos.add(p4);
+		
+		// Precisa instaciar as classes correspodentes - num sei como faz		
+		Pesquisador s = new Pesquisador(11, "Cascão", 1000.0, "Senior");
+		pesquisadores.add(s);
+		
+		alocacoes.add(new Alocacao(s, p1, new Data(4, 8, 2020)));
 	}
 	
 	public ArrayList<Pesquisador> getPesquisadores(){
