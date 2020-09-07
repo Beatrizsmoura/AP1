@@ -2,7 +2,7 @@
 public class Assistente extends Pesquisador {
 	
 	public Assistente(String _nome, int _matricula, double _salarioBase) {
-		super(_nome, _matricula, _salarioBase, "Assistente");
+		super( _matricula, _nome, _salarioBase, "Assistente");
 		calcularSalario(_salarioBase);
 		
 	}

@@ -8,9 +8,9 @@ public class Pesquisador {
 	private  String categoria;
 	protected double salarioBruto;
 	
-	public Pesquisador(String _nome, int _matricula, double _salarioBase, String _categoria) {
-		setNome(_nome);
+	public Pesquisador(int _matricula, String _nome , double _salarioBase, String _categoria) {
 		setMatricula(_matricula);
+		setNome(_nome);
 		setSalarioBase(_salarioBase);
 		setCategoria(_categoria);
 	}

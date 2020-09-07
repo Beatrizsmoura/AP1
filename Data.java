@@ -4,6 +4,12 @@ public class Data {
 	private int mes;
 	private int ano;
 	
+	public Data(int _dia, int _mes, int _ano) {
+		setDia(_dia);
+		setMes(_mes);
+		setAno(_ano);
+	}
+	
 	public int getDia() {
 		return dia;
 		

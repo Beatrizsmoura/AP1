@@ -6,8 +6,11 @@ public class Projeto {
 	private Data dataInicio;
 	private double custo;
 	
-	public Projeto() {
-		
+	public Projeto(String _nome, double _custo, int _duracao, Data _dataInicio) {
+		setNome(_nome);
+		setCusto(_custo);
+		setDuracao(_duracao);
+		setDataInicio(_dataInicio);
 	}
 
 	public String getNome() {
