@@ -1,3 +1,6 @@
+// BEATRIZ MOURA DA SILVA 1615080251
+// VINICIUS EDWARDS GUIMARAES SOUSA 1815310026
+
 import java.util.ArrayList;
 
 public class Main {
@@ -9,6 +12,8 @@ public class Main {
 		ArrayList<Pesquisador> pesquisadores = Nintendo.getPesquisadores();
 		ArrayList<Projeto> projetos = Nintendo.getProjetos();
 		ArrayList<Alocacao> alocacoes = Nintendo.getAlocacoes();
+		
+		// QUESTAO 02 
 		
 		// TABELA PESQUISADORES
 		System.out.println("###### PESQUISADORES ######");
@@ -29,8 +34,10 @@ public class Main {
 		}
 		System.out.println();
 		
-		//TABELA ALOCAÇÕES
-		System.out.println("###### ALOCAÇÕES ######");
+		// QUESTAO 03
+		
+		//TABELA ALOCAÃ‡Ã•ES
+		System.out.println("###### ALOCAÃ‡Ã•ES ######");
 		System.out.format("%-13s%-17s%-12s", "PESQUISADOR", "PROJETO", "DATA ENTRADA");
 		System.out.println();
 		System.out.format("%-13s%-17s%-12s", "------------", "----------------", "------------");
@@ -47,7 +54,9 @@ public class Main {
 		}
 		System.out.println();
 		
-		//TESTE DA QUESTAO 4
+		//QUESTAO 04
+		
+		//lista os projetos do pesquisador n
 		Pesquisador pesquisador1 = pesquisadores.get(0);
 		ArrayList<Projeto> projetosDePesquisador = Nintendo.getProjetosDePesquisador(pesquisador1);
 		
@@ -55,9 +64,11 @@ public class Main {
 		for (Projeto projeto: projetosDePesquisador) {
 			System.out.println("-"+projeto.getNome());
 		}
+		
 		System.out.println();
 		
-		//TESTE DA QUESTAO 4
+		
+		//lista os pesquisadores do projeto n
 		Projeto projeto1 = projetos.get(0);
 		ArrayList<Pesquisador> pesquisadoresDeProjeto = Nintendo.getPesquisadoresDeProjeto(projeto1);
 		
