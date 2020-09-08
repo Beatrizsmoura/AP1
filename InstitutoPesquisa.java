@@ -1,3 +1,4 @@
+  
 import java.util.ArrayList;
 
 public class InstitutoPesquisa {
@@ -15,8 +16,11 @@ public class InstitutoPesquisa {
 		this.pesquisadores = new ArrayList<>();
 		this.alocacoes = new ArrayList<Alocacao>();
 		
+		// questao01 
+		
+		// instanciaçao projetos
 		Projeto p1 = new Projeto("Robo domestico", 100000.0, 48, new Data(1, 1, 2007));
-		Projeto p2 = new Projeto("Motor � vento", 200000.0, 15, new Data(2, 2, 2007));
+		Projeto p2 = new Projeto("Motor à vento", 200000.0, 15, new Data(2, 2, 2007));
 		Projeto p3 = new Projeto("Playstation Wii", 300000.0, 24, new Data(3, 3, 2007));
 		Projeto p4 = new Projeto("Teletransporte", 400000.0, 36, new Data(4, 4, 2007));
 		
@@ -25,9 +29,10 @@ public class InstitutoPesquisa {
 		projetos.add(p3);
 		projetos.add(p4);
 		
-		Senior pesquisador1 = new Senior(11, "Casc�o", 1000.0);
+		//instanciaçao pesquisador 
+		Senior pesquisador1 = new Senior(11, "Cascão", 1000.0);
 		Assistente pesquisador2 = new Assistente(22, "Cebolinha", 1000.0);
-		Assistente pesquisador3 = new Assistente(33, "M�nica", 1200.0);
+		Assistente pesquisador3 = new Assistente(33, "Mônica", 1200.0);
 		Pleno pesquisador4 = new Pleno(44, "Magali", 1200.0);
 		Senior pesquisador5 = new Senior(55 ,"Chico Bento", 1400.0);
 		
@@ -37,7 +42,7 @@ public class InstitutoPesquisa {
 		pesquisadores.add(pesquisador4);
 		pesquisadores.add(pesquisador5);
 		
-	
+		// instanciaçao alocacoes
 		
 		alocacoes.add(new Alocacao(pesquisador1, p1, new Data(4, 8, 2020)));
 		alocacoes.add(new Alocacao(pesquisador1, p3, new Data(5, 8, 2020)));
@@ -66,6 +71,7 @@ public class InstitutoPesquisa {
 		return this.alocacoes;
 	}
 	
+	// metodo getprojetosdePesquisa()
 	public ArrayList<Projeto> getProjetosDePesquisador(Pesquisador pesquisador) {
 		ArrayList<Projeto> _projetos = new ArrayList<Projeto>();
 		for (Alocacao alocacao: alocacoes) {
@@ -77,6 +83,7 @@ public class InstitutoPesquisa {
 		return _projetos;
 	}
 	
+	// metodo getPesquisadoresdeProjeto()
 	public ArrayList<Pesquisador> getPesquisadoresDeProjeto(Projeto projeto) {
 		ArrayList<Pesquisador> _pesquisadores= new ArrayList<Pesquisador>();
 		for (Alocacao alocacao: alocacoes) {
